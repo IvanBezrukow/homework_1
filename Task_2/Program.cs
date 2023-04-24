@@ -4,20 +4,12 @@ Console.WriteLine("Введите 2 число");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите 3 число");
 int c = Convert.ToInt32(Console.ReadLine());
-int max = a;
-if (b>a)
+int Max(int arg1, int arg2, int arg3)
 {
-    max = b;
-    if (b>c)
-    {
-        max = b;
-    }
-    else 
-    max = c;
+    int result = arg1;
+    if (arg2 > result) result = arg2;
+    if (arg3 > result) result = arg3;
+    return result;
 }
-if (c>a)
-{
-    max = c;
-}
-Console.Write("max = ");
-Console.WriteLine(max);
+int max = Max(a, b, c);
+Console.WriteLine($"max = {max}");

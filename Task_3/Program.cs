@@ -4,5 +4,5 @@ if (a % 2 == 0)
 {
     Console.WriteLine("Число четное");
 }
-else 
+else
     Console.WriteLine("Число нечетное");
